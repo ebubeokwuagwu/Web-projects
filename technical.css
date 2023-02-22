@@ -1,0 +1,1187 @@
+
+html {
+    box-sizing: border-box;
+}
+    body {
+        color: rgba(24, 24, 24, 0.8);
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        font-size: 70.5%;
+        font-family: 'Lexend', sans-serif;
+        z-index: -1;
+      overflow-x: hidden;
+       
+    }
+    #page-container {
+         width: 100%;
+         height: auto;
+         margin: 0;
+         padding-top: 6%;
+    }
+    
+      /*****media queries**/
+
+/*extra-small devices, portrait tablets and large phones(768px and down) */
+
+@media only screen and (max-width: 768px) {
+   #navbar {
+        width: 28%;
+        max-width: 30%;
+        height: 100%;
+        background-color:  red;/*rgb(244, 244, 
+    244);*/
+    overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 2px;
+        padding-top: 5%;
+       border-right: 1px solid black;
+       text-align: left;
+       z-index: 2;
+       display: flex; 
+       flex-direction: column;
+       align-items: flex-end;
+       gap: 1rem;
+    }
+    #navbar header {
+        font-size: 0.5rem;
+        text-align: center;
+        border-bottom: 0.7px dotted  black;
+       width: 100%;
+    }
+    #navbar  .nav-link {
+        color: black;
+        text-align: center;
+        font-size: 0.7rem;
+        text-decoration: none;
+    width: 100%;
+    font-weight: 370;
+}
+    #main-doc {
+        width: 1fr;
+        margin: 0 0 0 27.5%;
+        padding: 0 5% 0 2%;
+        font-size: 0.9rem;
+        text-align: left;
+        overflow: hidden;
+        border: 1px solid red;
+    }
+    #reference {
+        margin-top: 3.5rem;
+    }
+ .sec-headers {
+        margin: 2rem 0 0.9rem 0.56rem;
+        font-size: 0.75rem;
+         font-weight: 900;
+    }
+    .main-section p,li {
+        line-height: 1.8;
+        font-size: 0.67rem;
+        font-family: 'Lexend';
+        font-weight: 500;
+        list-style: none;
+         margin-left: 1.5rem;
+    }
+    .main-section figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-section figure img {
+    width: 90%;
+    height: auto;
+    }
+    .main-section figure figcaption {
+        align-self: center !important;
+        text-align: center;
+        width: 70%;
+        font-size: 0.7rem;
+        margin: 0.8rem 0 0.8rem 0.8rem;
+        font-weight: 400;
+        opacity: 0.8;
+    }
+    .main-section .note {
+        font-family: 'Lexend', sans-serif;
+        font-weight: 390;
+        width: 65%;
+        height: 11.5vh;
+        background-color: rgb(216, 232, 243);
+        border: solid 1px rgb(216, 209, 209);
+        border-left: solid 5px rgb(121, 175, 255);
+        border-radius: 5px;
+        margin: 20px 0 0 15px;
+        line-height: 1.2;
+        padding: 1% 30px 2% 15px;
+    }
+    .main-section .exmpl, .exmp1, .exmp2, .exmp3 {
+        margin: 1.9rem 0 1.3rem 15px;
+    }
+    .main-section .exmpl, .exmp1, .exmp2, .exmp3 code {
+        padding-top: 0.9rem;
+        padding-bottom: 1rem;
+        padding-left: 1.5rem;
+    }
+    .main-section code {
+        font-size: 0.65rem;
+    }
+    .main-section .grey-highlight {
+        padding: 0.15rem 0.15rem;
+        background-color: rgb(230, 227, 227);
+        font-size: 0.57rem;
+        border-radius: 2pt;
+    }
+    .tag {
+        color: rgb(97, 165, 97);
+    }
+    .tag-value {
+     color: rgb(63, 62, 62);
+    }
+    .atr-name {
+        color: rgb(216, 66, 66);
+    }
+    .atr-value {
+        color: rgb(129, 189, 129)
+    }
+    .punctuation {
+      color: grey;
+    }
+  #Introduction_To_HTML h2 {
+   margin-top: 1rem;
+   margin-bottom: 1.2rem;
+}
+ #Anatomy_of_an_HTML_element  .p1, .p2, .p3 {
+    margin: 1.3rem 0 0 1.5rem !important;
+}
+  #Anatomy_of_an_HTML_element ul {
+        margin: 5px 0 0 3px;
+    }
+    #Anatomy_of_an_HTML_element li {
+        list-style: solid;
+        margin-top: 0.7rem;
+    }
+    #Anatomy_of_an_HTML_element .note strong {
+        margin-left: 5px;
+    }
+    #Anatomy_of_an_HTML_element .note .grey-highlight {
+        padding: 0.03rem 0.1rem;
+        margin: 0.3rem 0 0 0.2rem ;
+    }
+     #Nesting_elements .exmp1 {
+         width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+background-color: rgb(230, 227, 227);
+        }
+        #Nesting_elements .exmp2{
+         width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+        background-color: rgba(255, 221, 221, 0.986);
+        }
+    #Void_elements .exmpl {
+           width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+        background-color: rgb(230, 227, 227);
+    }
+    #Anatomy_of_an_HTML_document .exmpl {
+        width: 90%;
+        height: 49%;
+        display: block;
+        padding: 4px 0 0 0;
+    background-color: rgb(230, 227, 227);
+        color: rgb(95, 94, 94);
+        border-radius: 5px;
+    }
+    #Anatomy_of_an_HTML_document li {
+        margin-top: 1rem;
+    }
+    #Anatomy_of_an_HTML_document .exmpl code{
+        padding-bottom:  1rem;
+        display: block;
+        line-height: 10px;
+        width: 90%;
+    }
+    #Anatomy_of_an_HTML_document .exmpl .code1 {
+        margin: 5px 0 0 10px;
+    } 
+     #Anatomy_of_an_HTML_document .exmpl .code2 {
+        margin: -10px 0 0 10px;
+    } 
+    #Anatomy_of_an_HTML_document  .exmpl .code3 {
+        margin: -10px 0 0 18px; 
+    } 
+     #Anatomy_of_an_HTML_document .exmpl .code4 {
+        margin: -10px 0 0 27px; 
+    } 
+     #Anatomy_of_an_HTML_document .exmpl .code5 {
+        margin: -10px 0 0 27px;
+    } 
+     #Anatomy_of_an_HTML_document .exmpl .code6 {
+        margin: -10px 0 0 27px;
+    } 
+     #Anatomy_of_an_HTML_document .exmpl .code7 {
+        margin: -10px 0 0 18px;
+    } 
+     #Anatomy_of_an_HTML_document .exmpl #code8 {
+        margin: -10px 0 0 18px;
+    } 
+     #Anatomy_of_an_HTML_document .exmpl #code9 {
+        margin: -10px 0 0 27px;  
+    } 
+     #Anatomy_of_an_HTML_document .exmpl #code10 {
+        margin: -10px 0 0 18px; 
+    } 
+     #Anatomy_of_an_HTML_document .exmpl #code11 {
+        margin: -10px 0 0 10px;
+    } 
+    #Anatomy_of_an_HTML_document ol li {
+        margin-bottom: 8px;
+    }
+    #Images .exmpl {
+          width: 70%;
+        height: 4vh;
+        border-radius: 5px;    
+      background-color: rgb(230, 227, 227);
+    }
+    #Images ol {
+        margin: 5px 0 10px 3px;
+    }
+    #Images ol li {
+        margin: 5px 0 0 0px;
+    }
+    #Images .exmpl2 .exmpl-img {
+        width: 27%;
+        display: block;
+        border: dotted 1px grey;
+        border-radius: 5px;
+        margin: 0 auto 0 27%;
+    }
+    #Images .p3 {
+        margin-top: 10px;
+    }
+    #Headings h3 {
+        margin: 15px 0 12px 0;
+    }
+    #Headings .exmpl {
+        width: 70%;
+        display: block;
+        padding-left: 10px;
+        background-color: rgb(244, 244, 244);
+        color: rgb(95, 94, 94);
+        border-radius: 5px;
+    }
+    #Headings .exmpl code{
+        width: 100%;
+        display: block;
+        line-height: 1rem;
+        padding-left: 10px;
+    }
+    #Headings .exmpl .code1 {
+        margin-left: 7px;
+        color: grey;
+    } 
+     #section7 .exmpl .code2 {
+        margin-left: 10px;
+
+    } 
+    #section7 .exmpl .code3{
+        margin-left: 10px; 
+    } 
+     #section7 .exmpl .code4 {
+        margin-left: 10px; 
+    } 
+     #section7 .exmpl .code5 {
+        margin-left: 10px; 
+    } 
+    #Headings .note {
+        padding: 4% 30px 2% 15px;
+    }
+    #Headings .note strong {
+        margin-left: 5px;
+    }
+    #Paragraphs h3 {
+         margin: 20px 0 10px 0;
+    }
+    #Paragraphs .exmpl {
+         width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+        background-color: rgb(230, 227, 227);
+        }
+    #Lists h3 {
+        margin: 20px 0 12px 0;
+    }
+    #Lists ol {
+        margin: 5px 0 10px 3px;
+    }
+    #Lists .exmp1 {
+         width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+        background-color: rgb(230, 227, 227);
+        }
+     #Lists .exmp2 {
+        width: 80%;
+        display: block;
+        padding-top: 0.7rem;
+        padding-bottom: 1rem;
+    background-color: rgb(230, 227, 227);
+        color: rgb(95, 94, 94);
+        border-radius: 5px;
+    }
+    #Lists .exmp2 code {
+     display: block;
+        line-height: 1.5rem;
+        padding-left: 10px;
+        
+    } 
+    #Lists .exmp2 .code1 .tag-value {
+        display: block;
+        margin: 0 10px 0 0;
+        line-height: 9px;
+    }
+    #Lists .exmp2 .code1 {
+        margin-left: 10px;
+    } 
+    #Lists .exmp2 .code2 {
+        margin: -10px 0 0 10px;
+    } 
+    #Lists .exmp2  .code3 {
+        margin: -10px 0 0 18px; 
+    } 
+    #Lists .exmp2 .code4 {
+        margin: -10px 0 0 27px;
+    } 
+    #Lists .exmp2 .code5 {
+        margin: -10px 0 0 27px;
+    } 
+    #Lists .exmp2  .code6 {
+        margin: -10px 0 0 27px;
+    } 
+    #Lists .exmp2  .code7 {
+        margin: -10px 0 0 18px;
+    } 
+    #Links h3 {
+        margin: 20px 0 15px 0;
+    }
+    #Links .exmp1 {
+         width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+        background-color: rgb(230, 227, 227);
+        }
+        #Links .exmp2 {
+         width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+        background-color: rgb(230, 227, 227);
+        }
+     #Links .exmp3 {
+         width: 70%;
+        height: 6vh;
+        padding: 6px 0 9px 7px;
+        border-radius: 5px;
+background-color: rgb(230, 227, 227);
+        }
+     #Links .note {
+         
+        width: 74.9%;
+        height: 8vh;
+        margin: 20px 0 0 15px;
+        line-height: 10px;
+        padding: 4% 16px 2% 15px;
+        text-align: left;
+        font-family: 'Lexend', sans-serif;
+        width: 65%;
+        height: 11vh;
+        padding: 4% 30px 2% 15px;
+    }
+    #Links .note strong {
+        margin-left: 5px;
+      }
+      code {
+        padding: 1px 5px;
+        font-weight: light;
+    }
+}
+/* medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+   #navbar {
+    width: 26%;
+    max-width: 30%;
+    height: 100%;
+    background-color:  pink;/*rgb(244, 244, 
+244);*/
+overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 2px;
+    padding-top: 5%;
+   border-right: 1px solid black;
+   text-align: left;
+   z-index: 2;
+   display: flex; 
+   flex-direction: column;
+   align-items: flex-end;
+   gap: 1.3rem;
+}
+#navbar header {
+    font-size: 0.6rem;
+    text-align: center;
+    border-bottom: 0.7px dotted  black;
+   width: 100%;
+}
+#navbar  .nav-link {
+    color: black;
+    text-align: center;
+    font-size: 0.75rem;
+    text-decoration: none;
+width: 100%;
+font-weight: 370;
+border-bottom: 1px solid grey;
+padding-bottom: 7px;
+}
+#main-doc {
+    width: 1fr;
+    margin: 0 0 0 27.5%;
+    padding: 0 5% 0 2%;
+    font-size: 0.9rem;
+    text-align: left;
+    overflow: hidden;
+    border: 1px solid red;
+}
+#reference {
+    margin-top: 3.5rem;
+}
+.sec-headers {
+    margin: 4rem 0 1rem 0.56rem !important;
+    font-size: 0.77rem;
+     font-weight: 900;
+}
+.main-section p,li {
+    line-height: 1.8;
+    font-size: 0.75rem;
+    font-family: 'Lexend';
+    font-weight: 500;
+    list-style: none;
+     margin-left: 1.5rem;
+     margin-top: 1.5rem;
+}
+.main-section figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-section figure img {
+width: 84%;
+height: auto;
+}
+.main-section figure figcaption {
+    align-self: center !important;
+    text-align: center;
+    width: 70%;
+    font-size: 0.7rem;
+    margin: 0.8rem 0 0.8rem 0.8rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+.main-section .note {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 390;
+    width: 65%;
+    height: 11.5vh;
+    background-color: rgb(216, 232, 243);
+    border: solid 1px rgb(216, 209, 209);
+    border-left: solid 5px rgb(121, 175, 255);
+    border-radius: 5px;
+    margin: 20px 0 0 25px;
+    line-height: 1.2;
+    padding: 1% 30px 2% 15px;
+}
+.main-section .exmpl, .exmp1, .exmp2, .exmp3 {
+    margin: 1.9rem 0 1.3rem 1.7rem;
+}
+.main-section .exmpl, .exmp1, .exmp2, .exmp3 code {
+    padding-top: 0.9rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+.main-section code {
+    font-size: 0.7rem;
+}
+.main-section .grey-highlight {
+    padding: 0.15rem 0.15rem;
+    background-color: rgb(230, 227, 227);
+    font-size: 0.rem;
+    border-radius: 2pt;
+}
+.tag {
+    color: rgb(97, 165, 97);
+}
+.tag-value {
+ color: rgb(63, 62, 62);
+}
+.atr-name {
+    color: rgb(216, 66, 66);
+}
+.atr-value {
+    color: rgb(129, 189, 129)
+}
+.punctuation {
+  color: grey;
+}
+#Introduction_To_HTML h2 {
+margin-top: 1rem !important;
+margin-bottom: 1.2rem;
+}
+#Anatomy_of_an_HTML_element  .p1, .p2, .p3 {
+margin: 1.3rem 0 0 1.5rem !important;
+}
+#Anatomy_of_an_HTML_element ul {
+    margin: 5px 0 0 3px;
+}
+#Anatomy_of_an_HTML_element li {
+    list-style: solid;
+    margin-top: 0.7rem;
+}
+#Anatomy_of_an_HTML_element .note {
+    padding-top:  2%;
+    padding-bottom: 1%;
+}
+#Anatomy_of_an_HTML_element .note strong {
+    margin-left: 5px;
+}
+#Anatomy_of_an_HTML_element .note .grey-highlight {
+    padding: 0.03rem 0.1rem;
+    margin: 0.3rem 0 0 0.2rem ;
+}
+ #Nesting_elements .exmp1 {
+     width: 70%;
+    height: 4vh;
+    border-radius: 5px;
+background-color: rgb(230, 227, 227);
+    }
+    #Nesting_elements .exmp2{
+     width: 70%;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: rgba(255, 221, 221, 0.986);
+    }
+#Void_elements .exmpl {
+       width: 70%;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: rgb(230, 227, 227);
+}
+#Anatomy_of_an_HTML_document .exmpl {
+    width: 90%;
+    height: 49%;
+    display: block;
+    padding: 4px 0 0 0;
+background-color: rgb(230, 227, 227);
+    color: rgb(95, 94, 94);
+    border-radius: 5px;
+}
+#Anatomy_of_an_HTML_document li {
+    margin-top: 1rem;
+}
+#Anatomy_of_an_HTML_document .exmpl code{
+    padding-bottom:  1rem;
+    display: block;
+    line-height: 10px;
+    width: 90%;
+}
+#Anatomy_of_an_HTML_document .exmpl .code1 {
+    margin: 5px 0 0 10px;
+} 
+ #Anatomy_of_an_HTML_document .exmpl .code2 {
+    margin: -10px 0 0 10px;
+} 
+#Anatomy_of_an_HTML_document  .exmpl .code3 {
+    margin: -10px 0 0 18px; 
+} 
+ #Anatomy_of_an_HTML_document .exmpl .code4 {
+    margin: -10px 0 0 27px; 
+} 
+ #Anatomy_of_an_HTML_document .exmpl .code5 {
+    margin: -10px 0 0 27px;
+} 
+ #Anatomy_of_an_HTML_document .exmpl .code6 {
+    margin: -10px 0 0 27px;
+} 
+ #Anatomy_of_an_HTML_document .exmpl .code7 {
+    margin: -10px 0 0 18px;
+} 
+ #Anatomy_of_an_HTML_document .exmpl #code8 {
+    margin: -10px 0 0 18px;
+} 
+ #Anatomy_of_an_HTML_document .exmpl #code9 {
+    margin: -10px 0 0 27px;  
+} 
+ #Anatomy_of_an_HTML_document .exmpl #code10 {
+    margin: -10px 0 0 18px; 
+} 
+ #Anatomy_of_an_HTML_document .exmpl #code11 {
+    margin: -10px 0 0 10px;
+} 
+#Anatomy_of_an_HTML_document ol li {
+    margin-bottom: 8px;
+}
+#Images .exmpl {
+      width: 70%;
+    height: 4vh;
+    border-radius: 5px;    
+  background-color: rgb(230, 227, 227);
+}
+#Images ol {
+    margin: 5px 0 10px 3px;
+}
+#Images ol li {
+    margin: 5px 0 0 0px;
+}
+#Images .exmpl2 .exmpl-img {
+    width: 18%;
+    display: block;
+    border: dotted 1px grey;
+    border-radius: 5px;
+    margin: 0 auto 0 27%;
+}
+#Images .p3 {
+    margin-top: 50px !important;
+}
+#Headings h3 {
+    margin: 15px 0 12px 0;
+}
+#Headings .exmpl {
+    width: 70%;
+    display: block;
+    padding-left: 10px;
+    background-color: rgb(244, 244, 244);
+    color: rgb(95, 94, 94);
+    border-radius: 5px;
+}
+#Headings .exmpl code{
+    width: 100%;
+    display: block;
+    line-height: 1rem;
+    padding-left: 10px;
+}
+#Headings .exmpl .code1 {
+    margin-left: 7px;
+    color: grey;
+} 
+ #section7 .exmpl .code2 {
+    margin-left: 10px;
+
+} 
+#section7 .exmpl .code3{
+    margin-left: 10px; 
+} 
+ #section7 .exmpl .code4 {
+    margin-left: 10px; 
+} 
+ #section7 .exmpl .code5 {
+    margin-left: 10px; 
+} 
+#Headings .note {
+    padding: 4% 30px 2% 15px;
+}
+#Headings .note strong {
+    margin-left: 5px;
+}
+#Paragraphs h3 {
+     margin: 20px 0 10px 0;
+}
+#Paragraphs .exmpl {
+     width: 70%;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: rgb(230, 227, 227);
+    }
+#Lists h3 {
+    margin: 20px 0 12px 0;
+}
+#Lists ol {
+    margin: 5px 0 10px 3px;
+}
+#Lists .exmp1 {
+     width: 70%;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: rgb(230, 227, 227);
+    }
+ #Lists .exmp2 {
+    width: 80%;
+    display: block;
+    padding-top: 0.7rem;
+    padding-bottom: 1rem;
+background-color: rgb(230, 227, 227);
+    color: rgb(95, 94, 94);
+    border-radius: 5px;
+}
+#Lists .exmp2 code {
+ display: block;
+    line-height: 1.5rem;
+    padding-left: 10px;
+    
+} 
+#Lists .exmp2 .code1 .tag-value {
+    display: block;
+    margin: 0 10px 0 0;
+    line-height: 9px;
+}
+#Lists .exmp2 .code1 {
+    margin-left: 10px;
+} 
+#Lists .exmp2 .code2 {
+    margin: -10px 0 0 10px;
+} 
+#Lists .exmp2  .code3 {
+    margin: -10px 0 0 18px; 
+} 
+#Lists .exmp2 .code4 {
+    margin: -10px 0 0 27px;
+} 
+#Lists .exmp2 .code5 {
+    margin: -10px 0 0 27px;
+} 
+#Lists .exmp2  .code6 {
+    margin: -10px 0 0 27px;
+} 
+#Lists .exmp2  .code7 {
+    margin: -10px 0 0 18px;
+} 
+#Links h3 {
+    margin: 20px 0 15px 0;
+}
+#Links .exmp1 {
+     width: 70%;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: rgb(230, 227, 227);
+    }
+    #Links .exmp2 {
+     width: 70%;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: rgb(230, 227, 227);
+    }
+ #Links .exmp3 {
+     width: 70%;
+    height: 6vh;
+    padding: 6px 0 9px 7px;
+    border-radius: 5px;
+background-color: rgb(230, 227, 227);
+    }
+ #Links .note {
+    width: 74.9%;
+    height: 8vh;
+    margin: 20px 0 0 15px;
+    line-height: 15px;
+    padding: 4% 16px 2% 15px;
+    text-align: left;
+    font-family: 'Lexend', sans-serif;
+    width: 65%;
+    height: 11vh;
+    padding: 4% 30px 2% 15px;
+}
+#Links .note strong {
+    margin-left: 5px;
+  }
+  code {
+    padding: 1px 5px;
+    font-weight: light;
+}
+}
+/*large devices, extra-large devices (laptops/desktops,large laptops and desktops*/
+@media only screen and (min-width: 992px) and (max-width: 30000px) {
+    #navbar {
+        width: 23%;
+        max-width: 30%;
+        height: 100%;
+        background-color:  purple;/*rgb(244, 244, 
+    244);*/
+    overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 2px;
+        padding-top: 3%;
+       border-right: 1px solid black;
+       text-align: left;
+       z-index: 2;
+       display: flex; 
+       flex-direction: column;
+       align-items: flex-end;
+       gap: 1.3rem;
+    }
+    #navbar header {
+        font-size: 0.65rem;
+        text-align: center;
+        border-bottom: 10px double  rgba(116, 114, 114, 0.507);
+       width: 100%;
+    }
+    #navbar  .nav-link {
+        color: black;
+        text-align: center;
+        font-size: 0.9rem;
+        text-decoration: none;
+    width: 100%;
+    font-weight: 350;
+    border-bottom: 1px solid rgba(116, 114, 114, 0.507);
+    padding-bottom: 7px;
+    }
+    #main-doc {
+        width: 1fr;
+        margin: 0 0 0 23%;
+        padding: 0 4% 0 2%;
+        font-size: 0.9rem;
+        text-align: left;
+        overflow: hidden;
+        border: 1px solid red;
+    }
+    #reference {
+        margin-top: 5.5rem;
+    }
+    .sec-headers {
+        margin: 4rem 0 3rem 0.56rem !important;
+        font-size: 0.85rem;
+         font-weight: 900;
+    }
+    .main-section p,li {
+        line-height: 1.8;
+        font-size: 0.9rem;
+        font-family: 'Lexend';
+        font-weight: 500;
+        list-style: none;
+         margin-left: 1.5rem;
+         margin-top: 1.5rem;
+    }
+    .main-section figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-section figure img {
+    width: 80%;
+    height: auto;
+    }
+    .main-section figure figcaption {
+        align-self: center !important;
+        text-align: center;
+        width: 70%;
+        font-size: 0.8rem;
+        margin: 0.8rem 0 0.8rem 0.8rem;
+        font-weight: 400;
+        opacity: 0.8;
+    }
+    .main-section .note {
+        font-family: 'Lexend', sans-serif;
+        font-weight: 390;
+        width: 65%;
+        height: 11.5vh;
+        background-color: rgb(216, 232, 243);
+        border: solid 1px rgb(216, 209, 209);
+        border-left: solid 5px rgb(121, 175, 255);
+        border-radius: 5px;
+        margin: 20px 0 0 70px !important;
+        line-height: 1.2;
+        padding: 1% 30px 2% 15px;
+    }
+    .main-section .exmpl, .exmp1, .exmp2, .exmp3 {
+        margin: 1.9rem 0 1.3rem 1.7rem;
+    }
+    .main-section .exmpl, .exmp1, .exmp2, .exmp3 code {
+        padding-top: 0.9rem;
+        padding-bottom: 1rem;
+        padding-left: 1.5rem;
+    }
+    .main-section code {
+        font-size: 0.8rem;
+        padding: 1px 5px;
+        font-weight: light;
+    }
+    .main-section .grey-highlight {
+        padding: 0.15rem 0.15rem;
+        background-color: rgb(230, 227, 227);
+        font-size: 0.8rem;
+        border-radius: 2pt;
+    }
+    .tag {
+        color: rgb(97, 165, 97);
+    }
+    .tag-value {
+     color: rgb(63, 62, 62);
+    }
+    .atr-name {
+        color: rgb(216, 66, 66);
+    }
+    .atr-value {
+        color: rgb(129, 189, 129)
+    }
+    .punctuation {
+      color: grey;
+    }
+    #Introduction_To_HTML h2 {
+    margin-top: 1rem !important;
+    margin-bottom: 1.2rem;
+    }
+    #Anatomy_of_an_HTML_element  .p1, .p2, .p3 {
+    margin: 1.3rem 0 0 1.5rem !important;
+    }
+    #Anatomy_of_an_HTML_element ul {
+        margin: 5px 0 0 3px;
+    }
+    #Anatomy_of_an_HTML_element li {
+        list-style: solid;
+        margin-top: 0.7rem;
+    }
+    #Anatomy_of_an_HTML_element .note {
+        padding-top:  2%;
+        padding-bottom: 1%;
+    }
+    #Anatomy_of_an_HTML_element .note strong {
+        margin-left: 5px;
+    }
+    #Anatomy_of_an_HTML_element .note .grey-highlight {
+        padding: 0.03rem 0.1rem;
+        margin: 0.3rem 0 0 0.2rem ;
+    }
+     #Nesting_elements .exmp1 {
+         width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+    background-color: rgb(230, 227, 227);
+        }
+        #Nesting_elements .exmp2{
+         width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+        background-color: rgba(255, 221, 221, 0.986);
+        }
+    #Void_elements .exmpl {
+           width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+        background-color: rgb(230, 227, 227);
+    }
+    #Anatomy_of_an_HTML_document .exmpl {
+        width: 90%;
+        height: 49%;
+        display: block;
+        padding: 4px 0 0 0;
+    background-color: rgb(230, 227, 227);
+        color: rgb(95, 94, 94);
+        border-radius: 5px;
+    }
+    #Anatomy_of_an_HTML_document li {
+        margin-top: 1rem;
+    }
+    #Anatomy_of_an_HTML_document .exmpl code{
+        padding-bottom:  1rem;
+        display: block;
+        line-height: 10px;
+        width: 90%;
+    }
+    #Anatomy_of_an_HTML_document .exmpl .code1 {
+        margin: 5px 0 0 10px;
+    } 
+     #Anatomy_of_an_HTML_document .exmpl .code2 {
+        margin: -10px 0 0 10px;
+    } 
+    #Anatomy_of_an_HTML_document  .exmpl .code3 {
+        margin: -10px 0 0 18px; 
+    } 
+     #Anatomy_of_an_HTML_document .exmpl .code4 {
+        margin: -10px 0 0 27px; 
+    } 
+     #Anatomy_of_an_HTML_document .exmpl .code5 {
+        margin: -10px 0 0 27px;
+    } 
+     #Anatomy_of_an_HTML_document .exmpl .code6 {
+        margin: -10px 0 0 27px;
+    } 
+     #Anatomy_of_an_HTML_document .exmpl .code7 {
+        margin: -10px 0 0 18px;
+    } 
+     #Anatomy_of_an_HTML_document .exmpl #code8 {
+        margin: -10px 0 0 18px;
+    } 
+     #Anatomy_of_an_HTML_document .exmpl #code9 {
+        margin: -10px 0 0 27px;  
+    } 
+     #Anatomy_of_an_HTML_document .exmpl #code10 {
+        margin: -10px 0 0 18px; 
+    } 
+     #Anatomy_of_an_HTML_document .exmpl #code11 {
+        margin: -10px 0 0 10px;
+    } 
+    #Anatomy_of_an_HTML_document ol li {
+        margin-bottom: 8px;
+    }
+    #Images .exmpl {
+          width: 70%;
+        height: 4vh;
+        border-radius: 5px;    
+      background-color: rgb(230, 227, 227);
+    }
+    #Images ol {
+        margin: 5px 0 10px 3px;
+    }
+    #Images ol li {
+        margin: 5px 0 0 0px;
+    }
+    #Images .exmpl2 .exmpl-img {
+        width: 18%;
+        display: block;
+        border: dotted 1px grey;
+        border-radius: 5px;
+        margin: 2% auto 0 27%;
+    }
+    #Images .p3 {
+        margin-top: 50px !important;
+    }
+    #Headings h3 {
+        margin: 15px 0 12px 0;
+    }
+    #Headings .exmpl {
+        width: 70%;
+        display: block;
+        padding-left: 10px;
+        background-color: rgb(244, 244, 244);
+        color: rgb(95, 94, 94);
+        border-radius: 5px;
+    }
+    #Headings .exmpl code{
+        width: 100%;
+        display: block;
+        line-height: 1.5rem;
+        padding-left: 10px;
+    }
+    #Headings .exmpl .code1 {
+        margin-left: 7px;
+        color: grey;
+    } 
+     #section7 .exmpl .code2 {
+        margin-left: 10px;
+    
+    } 
+    #section7 .exmpl .code3{
+        margin-left: 10px; 
+    } 
+     #section7 .exmpl .code4 {
+        margin-left: 10px; 
+    } 
+     #section7 .exmpl .code5 {
+        margin-left: 10px; 
+    } 
+    #Headings .note {
+        padding: 4% 30px 2% 15px;
+        line-height: 1rem;
+    }
+    #Headings .note strong {
+        margin-left: 5px;
+    }
+    #Paragraphs h3 {
+         margin: 20px 0 10px 0;
+    }
+    #Paragraphs .exmpl {
+         width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+        background-color: rgb(230, 227, 227);
+        }
+    #Lists h3 {
+        margin: 20px 0 12px 0;
+    }
+    #Lists ol {
+        margin: 5px 0 10px 3px;
+    }
+    #Lists .exmp1 {
+         width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+        background-color: rgb(230, 227, 227);
+        }
+     #Lists .exmp2 {
+        width: 80%;
+        display: block;
+        padding-top: 0.7rem;
+        padding-bottom: 1rem;
+    background-color: rgb(230, 227, 227);
+        color: rgb(95, 94, 94);
+        border-radius: 5px;
+    }
+    #Lists .exmp2 code {
+     display: block;
+        line-height: 1.7rem;
+        padding-left: 10px;
+        
+    } 
+    #Lists .exmp2 .code1 .tag-value {
+        display: block;
+        margin: 0 10px 0 0;
+        line-height: 9px;
+    }
+    #Lists .exmp2 .code1 {
+        margin-left: 10px;
+    } 
+    #Lists .exmp2 .code2 {
+        margin: -10px 0 0 10px;
+    } 
+    #Lists .exmp2  .code3 {
+        margin: -10px 0 0 18px; 
+    } 
+    #Lists .exmp2 .code4 {
+        margin: -10px 0 0 27px;
+    } 
+    #Lists .exmp2 .code5 {
+        margin: -10px 0 0 27px;
+    } 
+    #Lists .exmp2  .code6 {
+        margin: -10px 0 0 27px;
+    } 
+    #Lists .exmp2  .code7 {
+        margin: -10px 0 0 18px;
+    } 
+    #Links h3 {
+        margin: 20px 0 15px 0;
+    }
+    #Links .exmp1 {
+         width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+        background-color: rgb(230, 227, 227);
+        }
+        #Links .exmp2 {
+         width: 70%;
+        height: 4vh;
+        border-radius: 5px;
+        background-color: rgb(230, 227, 227);
+        }
+     #Links .exmp3 {
+         width: 70%;
+        height: 6vh;
+        padding: 10px 9px 9px 10px;
+        border-radius: 5px;
+    background-color: rgb(230, 227, 227);
+        }
+     #Links .note {
+        width: 74.9%;
+        height: 8vh;
+        margin: 20px 0 0 15px;
+        line-height: 1.3rem;
+        padding: 2% 16px 2% 15px !important;
+        text-align: left;
+        font-family: 'Lexend', sans-serif;
+        width: 65%;
+        height: 11vh;
+        padding: 4% 30px 2% 15px;
+    }
+    #Links .note strong {
+        margin-left: 5px;
+      }
+    
+}

@@ -1,0 +1,192 @@
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    font-family: 'Lexend', sans-serif;
+} 
+#page-container {
+     background-image: repeating-linear-gradient( 180deg, rgba(22, 22, 22, 0.788), rgb(0, 0, 0) 100%), url(https://i.ibb.co/L8n1S6D/IMG-20230221-214317.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     display: grid;
+     grid-template-rows: 100vh 1fr auto; 
+     height: 100%;
+    color:  #C5C6C7;
+    font-size: 72%;
+     overflow-x: hidden;
+}
+ h1, h2 {
+    font-size: 1.2rem;
+    color: white;
+ }
+ a {
+    text-decoration: none;
+   color: #C5C6C7;
+   font-size: 0.9rem;
+}
+a:hover {
+    color: #17a1a3;
+}
+#navbar {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 8vh;
+    background: linear-gradient(-230deg, #17a1a3, rgb(0, 0, 0));
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5% 0 0;
+    font-weight: 800;
+    list-style: none;
+    gap: 5rem;
+}
+#navbar .nav-link {
+   letter-spacing: 1.5px;
+}
+.nav-link:hover {
+    background-color: rgba(82, 80, 80, 0.849);
+    padding: 1rem 0.4rem; 
+}
+
+section {
+    width: 100%;
+    display: flex;
+}
+
+#Welcome_section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#Welcome_section strong {
+    font-size: 1.4rem;
+    word-spacing: 0.4rem;
+    margin: 0;
+}
+#Welcome_section h1 {
+    font-size: 1.2rem;
+    color: white;
+}
+#Welcome_section span, strong {
+    color: #C5C6C7;
+}
+#Welcome_section span {
+    font-size: 0.9rem;
+    margin-top: -3.4%;
+}
+#Projects {
+     flex-direction: column;
+     align-items: center;
+     gap: 2rem;
+     padding: 4vh 0 5vh 0;
+     background-color: #36797536;
+}
+#Projects .container {
+     display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+     gap: 2rem;
+     align-items: center;
+     justify-content: space-around;
+}
+.project-tile {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 2%;
+    
+}
+.project-tile .label {  
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: 'Lexend', sans-serif;
+    word-spacing: 2px;
+}
+.project-tile .project-link {
+    text-decoration: none;
+    color: #C5C6C7/*#45A29E*/
+}
+.project-tile .label i {
+    visibility: hidden;
+}
+.project-tile .label:hover i {
+     visibility: visible;
+     margin: 0 0.2rem;
+     color: #17a1a3;
+}
+.project-tile img {
+    max-width: 500px;
+    width: 80%;
+    border-radius: 4pt;
+}
+#profile-link {
+    width: 7%;
+    height: 3.5vh;
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+    background: linear-gradient(230deg, #17a1a3, rgb(0, 0, 0));
+    border-radius: 3pt;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5px;
+}
+#profile-link:hover {
+    background: linear-gradient(-230deg, rgba(0, 0, 0, 0.425), #17a1a3);
+}
+#Contact {
+    padding-top: 13%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background-color: #aaacaf0e;
+}
+#Contact p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+#Contact span {
+    font-size: 0.9rem;
+    margin-top: -3.5rem;
+}
+#Contact ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin-bottom: 8%;
+}
+.contact-link {
+    text-decoration: none;
+    color: #C5C6C7;
+    font-size: 0.9rem;
+} 
+.fa-discord, .fa-github, .fa-square-whatsapp, .fa-envelope {
+    margin-right: 0.7rem;
+}
+#footer {
+    display: flex;
+    flex-direction: row;
+    gap: 53rem;
+    padding-top: 2rem;
+}
+#footer span {
+    font-size: 0.8rem;
+}
+
+

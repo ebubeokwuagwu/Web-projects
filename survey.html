@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+ <link rel="stylesheet" href="survey.css">
+ <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+ <body>
+<h1 id="title">Quicky-Logistics User Experience Survey Form</h1>
+<p id="description">Thank you for taking time to help us serve you better</p>
+<form id="survey-form" action="https://www.freecodecamp.com/email-submit">
+<fieldset class="field-group">
+<legend class="scr-only">Personal Details</legend>
+<label id="name-label" for="name">Name:</label><br>
+<input id="name" class="form-control" type="text" placeholder="Full Name" required>
+<label  id="email-label" for="email">E-mail:</label>
+<input id="email" class="form-control" type="email" placeholder="valid email address" required><br>
+<label id="number-label">Age(optional)</label>
+<input id="number" class="form-control" type="number" min="13" max="100" placeholder="Age" required>
+</fieldset>
+<fieldset class="field-group">
+<legend class="scr-only">What purpose is Quality-Logistics serving you?</legend>
+<label for="dropdown" >purpose of usage</label>
+<select id="dropdown" class="form-control" name="options">
+<option value="choose">~choose~</option>
+<option value="personal">Personal</option>
+<option value="business">Business</option>
+<option value="Both personal and Business">Both personal and Business</option>0
+</select>
+</fieldset>
+<fieldset class="field-group fld-group3">
+<legend class="field-title">Which of our services Do you use?</legend>
+<label for="Quicky-shipping" class="option-label">Quicky-shipping
+<input id="Quicky-shipping" type="checkbox" name="preference" value="Quicky-shipping"></label>
+<label for="Quicky-delivery"class="option-label" >Quicky-delivery
+<input id="Quicky-delivery" type="checkbox" name="preference" value="Quicky-delivery"></label>
+<label for="Quicky-food" class="option-label">Quicky-food
+<input id="Quicky-food" type="checkbox" name="preference" value="Quicky-food"></label>
+<label for="Quicky-ride" class="option-label">Quicky-ride
+<input id="Quicky-ride" type="checkbox" name="preference" value="Quicky-ride"></label>
+</fieldset>
+  <fieldset class="field-group fld-group4">
+<legend class="field-title">Would you recommend Quicky-Logistics to a friend?</legend>
+<label for="yes" class="option-label">Definitely
+<input id="yes" type="radio" name="review" value="yes"></label>
+<label for="maybe" class="option-label">Maybe
+<input id="maybe" type="radio" name="review" value="maybe"></label>
+<label for="not sure" class="option-label">Not sure
+<input id="not sure" type="radio" name="review" value="not sure"></label>
+</fieldset>
+<fieldset class="field-group">
+<label id="comment-label">Any comments or suggestions?</label>
+<textarea id="comment-box" rows="6" cols="30" placeholder="write to us...."></textarea>
+<button type="submit" id="submit">Done</button>
+</fieldset> 
+</form>
+<footer id="footer">
+  <ul>
+    <li>Privacy</li>
+    <li>Terms</li>
+    <li>Contract</li>
+  </ul>
+  <span class="copyrights">Copyright 2022, Quicky-Logistics</span>
+  <span class="copyrights">powered by Humble lion</span>
+</footer>
+</body>
+<html>

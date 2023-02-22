@@ -1,0 +1,800 @@
+html {
+
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+ background-color: rgb(243, 237, 239);
+ font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  z-index: -1;
+}
+#invisible-space {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  margin-bottom: 29px;
+}
+/*medium, large and extra-large devices*/
+@media only screen and (min-width: 768px) and  (max-width: 30000px) {
+  #invisible-space {
+   height: 170px;
+   padding-bottom: 30px;
+  }
+  #Feature .feature1, .feature2, .feature3 {
+      padding-top: 15px;
+  }
+  #Pricing {
+      margin-top: 50px;
+  }
+}
+#page-container {
+overflow: hidden;
+}
+#container {
+  display: grid;
+  grid-template-columns: 100%;
+   margin: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  justify-content: center;
+  z-index: -1; 
+}
+.scr-only {
+   width: 0;
+  height: 0;
+  padding: 0;
+  opacity: 0;
+  margin: 0;
+  position: absolute;
+}
+section {
+  display: grid;
+ margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 7px;
+  padding: 0;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+section h2 {
+  font-size: 2.1rem;
+}
+
+section p, span {
+  font-size: 1.8rem;
+  font-family: 'Montserrat', sans-serif;
+}
+  
+#header {
+    background-color: rgba(19, 18, 18, 1.200);
+ display: grid; 
+ position: fixed;
+ width: 99vw;
+ grid-template-columns: 50vw 50vw;
+ margin: 0 0 5px 0;
+  z-index: 3000;
+} 
+
+  #header #logo {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+#header #logo #header-img {
+  padding: 1px 0 0 10px;
+  width: 6vw;
+}
+
+#header #nav-bar {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  margin: 0 13px 0 0;
+}
+
+#header #nav-bar ul {
+display: inline-flex;
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-right: 20px;
+  font-size: 1.5rem;
+  gap: 30px;
+  justify-content:  flex-start;
+}
+
+#header #nav-bar li,.nav-link {
+  color: rgb(200,200,200,0.5);
+  text-decoration: none;
+  align-self: baseline;
+  text-align: center;
+  margin: 0 7px 0 0;
+}
+#nav-bar ul a[href="#More"]:hover {
+opacity: 0;
+}
+.sub-menu {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  background-color: rgba(19, 18, 18, 1.200);
+}
+
+#form-container {
+ align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+#form-container h2 {   
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; 
+  margin-top: 0;
+  padding: 0;
+  -webkit-font-smoothing: auto;
+}
+
+#form-container #form {
+  align-items: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#form-container #email {
+  background-color: white;
+  border: 1px dotted black;
+font-family: 'Montserrat', sans-serif;
+color: black;
+font-weight: bold;
+height: auto;
+}
+
+#form-container #email::placeholder{ 
+       font-family: 'Montserrat', sans-serif;
+       font-style: italic;
+       text-align: center
+}
+
+#form-container form #submit {
+  background-color: rgb(241, 181, 14);
+ border: none; 
+ font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 12px auto;
+  height: auto;
+  width: auto;
+}
+
+#Features {
+  display: grid;
+ padding: 0;
+ justify-content: center;
+grid-template-rows: repeat(2,1fr) 120px;
+}
+
+#Features .feature1, .feature2, .feature3 {
+ display: grid;
+ grid-template-columns: 12vw 1fr;
+justify-content: flex-end;
+ gap: 5px;
+ padding-top: 150px;
+}
+#Features h2 {
+ margin-bottom: 0;
+}
+#Features p {
+  font-family: 'Catamaran', sans-serif !important;
+  margin: -4px 0 0 0;
+  line-height: 1.5;
+  padding: 0;
+  font-size: 1.7rem; 
+}
+#Features .desc {
+display: flex;
+  flex-direction: column;
+  padding-right: 6px; 
+  padding-bottom: 30px;
+      gap: 9px;
+}
+.fas, .fa-star, .fa-truck-bolt, .fa-medal {
+  font-weight: 900;
+  font-size: 4rem;
+padding: 0;
+   color: gold;
+   margin: 0;
+}
+#Features .icon {   
+ width: auto;
+ height: 60px;
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-start;
+ padding-top: 20px;
+}
+#Description {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#Description > #video {
+ height: auto;
+ width: 100%;
+}
+#Recommended-Products {
+  display: grid;
+  padding-top: 9vw;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 90px;
+padding: 0;
+justify-content: flex-start;
+}
+#Recommended-Products #product1, #product2, #product3 {
+  display: flex;
+  flex-direction: column;
+margin: 0;
+padding: 0;
+  justify-content: center;
+position: relative;
+  align-items: center;
+  gap: 20px;
+} 
+#Recommended-Products img {
+ min-width: 200px;
+ max-width: 100vw;
+   width: 50%;
+  height: auto;
+} 
+#Recommended-products span {
+  font-weight: bold;
+}
+  #Pricing {
+  grid-template-rows:100%;
+  justify-content: center;
+  align-items: flex-start; 
+}
+#Pricing .product {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      border: 1px solid black;
+      text-align: center;
+      word-spacing: 5px;
+      line-height: 1.5;
+      border-radius: 3px;
+      height: 100%;
+  }
+  #Pricing .product > .name {
+      background-color: #ddd;
+      color: black;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+}
+  #Pricing a {
+        background-color: rgb(241, 181, 14);
+     margin: 12px auto;
+     color: black;
+     text-decoration: none;
+     text-align: center;
+     border: none;  
+     font-family: 'Montserrat', sans-serif; 
+     width: 10vw;
+     font-size: 1.5rem
+  }
+  #Delivery-Policy {
+      grid-template-columns: 100%;
+  }
+   #Delivery-Policy p {
+     text-align: justify;
+     padding: 0 9px;
+     font-size: 1.4rem;
+  }
+  footer {
+width: 100%;
+      display: flex;
+    background-color: #ddd;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end; 
+  }
+  footer ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 1.4rem;
+  gap: 30px;
+  }
+  footer .copyrights {
+  font-weight: 900;
+  word-spacing: 3px;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  }
+  
+
+/*****media queries**/
+
+/*extra-small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  html {
+      font-size: 40%;
+  }
+
+  #container {
+  grid-template-rows: 150px auto repeat(5,auto);
+  gap:40px;
+  padding-bottom: 0 !important;
+}
+#header {
+ grid-template-columns: 70vw 30vw !important;
+ margin: 0; 
+}
+#header #logo #header-img {
+  width:8vw !important; 
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+#header #nav-bar {
+  margin: 0 10px 0 0 !important;
+}
+#header #nav-bar ul {
+  gap: 0 !important;
+ margin: 0 !important;
+justify-content:  flex-start !important;
+}
+.active,#nav-bar #dropdown:hover
+{
+  border-radius: 3px;
+}
+#nav-bar ul #dropdown:hover .sub-menu 
+{
+  display: block;
+  position: absolute;
+  border-radius: 2pt;
+  background-color: rgba(19, 18, 18, 1.200);
+  left: 80%;
+  width: auto;
+  height: auto;
+  opacity: 1;
+}
+
+#dropdown:hover .sub-menu ul {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: flex-start;
+  padding: 0 0 4px 0;
+} 
+.sub-menu ul li {
+   margin-top: 5px !important;
+   line-height: 1.4;
+   border-bottom: 1px dotted black;
+}
+#form-container h2 {   
+  font-size: 2.1rem !important; 
+}
+#form-container #email  {
+  width: auto;
+}
+#form-container #email::placeholder{ 
+       font-size: 1.6rem;
+}
+#form-container form #submit {
+  font-size: 1.7rem;
+}
+#Features .feature1, .feature2, .feature3 {
+ grid-template-columns: 15vw 1fr;
+ gap: 7px;
+ padding: 0;
+}
+#Features .desc {
+  padding-bottom: 70px !important;
+}
+#Description {
+  margin-bottom: 70px;
+}
+#Description > #video {
+  width: 90% !important;
+  padding: 0
+}
+
+#Recommended-Products {
+gap: 80px;
+}
+#Pricing {
+  padding-top: 40px;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+}
+
+#Pricing .product {
+  width: auto;   
+   height: 110px !important;
+}
+#Pricing .product > .name {
+  padding: 15px 1px 0 1px;
+}
+#Pricing h2 {
+  font-size: 1.4rem;
+}
+#Pricing a {
+ padding: 2px;
+ width: auto !important;
+ font-size: 1.5rem; 
+}
+footer {
+margin-top: 20px;
+padding: 5px 10px 5px 0;
+}
+footer ul {
+  margin: 0 0 8px 0;
+}
+}
+
+/*small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  html {
+      font-size: 50%;
+  }
+  #invisible-space {
+    height: 180px;
+  }
+  #container {
+  grid-template-rows: 150px   auto 190px repeat(4,auto);
+  gap: 30px;
+  padding-bottom: 0 !important;
+}
+#header #nav-bar ul {
+  font-size: 1.4rem !important;
+} 
+.active,#nav-bar #dropdown:hover
+{
+  border-radius: 3px;
+}
+#nav-bar ul #dropdown:hover .sub-menu 
+{
+  position: absolute;
+  border-radius: 2pt;
+  background-color: rgba(19, 18, 18, 1.200);
+  left: 88%;
+  width:  auto;
+  height: auto;
+  opacity: 1;
+}
+#dropdown:hover .sub-menu ul {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding: 0 0 0px 0;
+  gap: 3px !important;
+} 
+.sub-menu ul li { 
+   line-height: 1.4;
+   margin: 0 !important;
+   padding: 0 0 0 4px !important;
+   border-bottom: 0.1em dotted grey;
+}
+#form-container h2 {
+  font-size: 2.3rem;
+}
+#form-container #email  {
+  width: auto;
+}
+#form-container #email::placeholder{ 
+       font-size: 1.4rem;
+}
+#form-container form #submit {
+ padding-bottom: 2px;
+}
+#Features .feature1, .feature2, .feature3 {
+padding-top: 40px;
+gap: 10px;
+}
+#Recommended-Products {
+  padding-top: 50px;
+}
+#Pricing {
+grid-template-columns: repeat(3, 180px); 
+  gap: 8px;
+}
+#Pricing .product {
+width: 110px;
+}
+#Pricing h2 {
+  font-size: 1.5rem;
+}
+#Pricing a {
+  height: 23px;
+}
+#Delivery-Policy {
+margin-top: 30px;
+}
+footer {
+margin-top: 50px;
+padding-bottom: 5px;
+}
+}
+/* medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  html {
+      font-size: 50%;
+  }
+  #container {
+  grid-template-rows: 150px auto 230px repeat(4,auto);
+  gap: 30px;
+  padding-bottom: 0 !important;
+}
+#header #nav-bar ul {
+  font-size: 1.6rem !important;
+} 
+.active,#nav-bar #dropdown:hover
+{
+  border-radius: 3px;
+}
+#nav-bar ul #dropdown:hover .sub-menu 
+{
+  position: absolute;
+  border-radius: 2pt;
+  background-color: rgba(19, 18, 18, 1.200);
+  left: 88%;
+  width:  auto;
+  height: auto;
+  opacity: 1;
+}
+#dropdown:hover .sub-menu ul {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding: 0 0 0px 0;
+  gap: 3px !important;
+} 
+
+.sub-menu ul li { 
+   line-height: 1.4;
+   margin: 0 !important;
+   padding: 0 0 0 4px !important;
+   border-bottom: 0.1em dotted grey;
+}
+#form-container h2 {
+  font-size: 2.3rem;
+}
+#form-container #email  {
+  width: 200px;
+}
+#form-container #email::placeholder{ 
+       font-size: 1.6rem;
+}
+#form-container form #submit {
+  height: 22px !important;
+}
+#Features {
+margin-bottom: 150px;
+}
+#Features .feature1, .feature2, .feature3 {
+gap: 10px;
+} #Recommended-Products {
+  padding-top: 50px;
+}
+#Recommended-Products img {
+  width: 40%;
+}
+#Pricing {
+grid-template-columns: repeat(3, 180px); 
+  gap: 8px;
+}
+#Pricing .product {
+width: 120px;
+}
+#Pricing h2 {
+  font-size: 1.5rem;
+}
+#Pricing a {
+  height: 23px;
+}
+#Delivery-Policy {
+margin-top: 50px;
+}
+#Delivery-Policy p {
+ line-height: 1.5;
+}
+footer {
+margin-top: 50px;
+padding-bottom: 5px;
+}
+}/*large devices (laptops/desktops, 992px and up)*/
+@media only screen and (min-width: 992px) and (max-width: 1200px)
+{
+  #container {
+  grid-template-rows: 150px auto  260px repeat(4,auto);
+  gap: 60px;
+}
+.active,#nav-bar #dropdown:hover
+{
+  border-radius: 3px;
+}
+#nav-bar ul #dropdown:hover .sub-menu 
+{
+  position: absolute;
+  border-radius: 2pt;
+  background-color: rgba(19, 18, 18, 1.200);
+  left: 90%;
+  width:  auto;
+  height: auto;
+  opacity: 1;
+}
+#dropdown:hover .sub-menu ul {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding: 0 0 0px 0;
+  gap: 3px !important;
+} 
+
+.sub-menu ul li { 
+font-size: 1.3rem;      line-height: 1.4;
+   margin: 0 !important;
+   padding: 0 0 0 4px !important;
+   border-bottom: 0.1em dotted grey;
+}
+#form-container h2 {
+  font-size: 2.2rem;
+}
+#form-container #email  {
+  height: 27px !important;
+  width: 22vw;
+}
+#form-container #email::placeholder{ 
+       font-size: 1.3rem;
+}
+#form-container form #submit {
+  height: 27px !important;
+     width: 8vw !important;
+}
+#Features .feature1, .feature2, .feature3 {
+gap: 10px;
+}
+#Recommended-Products {
+  padding-top: 100px;
+}
+#Recommended-Products img {
+  width: 40%;
+}
+#Pricing {
+grid-template-columns: repeat(3, 200px); 
+  gap: 8px;
+}
+#Pricing .product {
+width: 190px;
+}
+#Pricing h2 {
+  font-size: 1.4rem;
+  padding: 15px 0;
+}
+#Pricing a {
+  height: 23px;
+  padding: 2px;
+}
+#Delivery-Policy {
+padding: 0 13px !important;
+margin-top: 50px;
+}
+#Delivery-Policy p {
+ line-height: 1.4;
+}
+footer {
+margin-top: 23px;
+padding-bottom: 5px;
+}
+footer ul {
+gap: 23px !important;
+}
+}
+/****/
+/*extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 992px) and (max-width: 30000px)  {
+  #container {
+ grid-template-rows: 150px auto  400px repeat(4,auto);
+  gap: 60px;
+}
+.active,#nav-bar #dropdown:hover
+{
+  border-radius: 3px;
+}
+#nav-bar ul #dropdown:hover .sub-menu 
+{
+  position: absolute;
+  border-radius: 2pt;
+  background-color: rgba(19, 18, 18, 1.200);
+  left: 93%;
+  width:  auto;
+  height: auto;
+  opacity: 1;
+}
+#dropdown:hover .sub-menu ul {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding: 0 0 0px 0;
+  gap: 3px !important;
+} 
+
+.sub-menu ul li { 
+font-size: 1.3rem;      line-height: 1.4;
+   margin: 0 !important;
+   padding: 0 0 0 4px !important;
+   border-bottom: 0.1em dotted grey;
+}
+#form-container h2 {
+  font-size: 2.2rem;
+}
+#form-container #email  {
+  height: 30px !important;
+  width: 20vw;
+}
+#form-container #email::placeholder{ 
+       font-size: 1.3rem;
+}
+#form-container form #submit {
+  height: 30px !important;
+     width: 8vw !important;
+}
+#Features .feature1, .feature2, .feature3 {
+gap: 15px;
+}
+#Description {
+  margin-top: 100px;
+}
+#Recommended-Products {
+  padding-top: 180px;
+}
+#Recommended-Products img {
+  width: 35%;
+}
+#Pricing {
+grid-template-columns: repeat(3, 250px); 
+  gap: 30px;
+}
+#Pricing .product {
+width: 250px;
+}
+#Pricing h2 {
+  font-size: 1.4rem;
+  padding: 15px 0;
+}
+#Pricing a {
+  height: 23px;
+  padding: 2px;
+}
+#Delivery-Policy {
+grid-template-columns: 80%;
+padding: 0 13px !important;
+margin-top: 50px;
+}
+#Delivery-Policy p {
+ line-height: 1.4;
+}
+footer {
+margin-top: 30px;
+padding-bottom: 5px;
+}
+footer ul {
+gap: 23px !important;
+}
+}

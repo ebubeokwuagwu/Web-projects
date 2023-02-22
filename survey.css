@@ -1,0 +1,380 @@
+body {
+    background: url("https://i.ibb.co/Wn1Q3kt/20221024-012719.jpg"); background-repeat: no-repeat;background-size: cover ;
+    display: flex;
+    flex-direction: column;
+   align-items:  center;
+   height: auto;
+   font-family: 'Nunito', sans-serif;
+   font-size: 62.5%;
+   padding-top: 10%;
+   color: white;
+  }
+  #title {
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed  rgba(252, 207, 58, 0.89);
+  }
+  #description {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 70vw;
+  }
+  #survey-form {  
+    background:rgba(13,34,100,0.7);
+  width: 95%;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-width: 700px;
+  height: auto;
+  color: white;
+  border-radius: 3pt;
+  }
+  .field-group {
+    margin: 0 auto 1.27rem auto;
+    padding: 0.25rem;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+ 
+  .field-group .field-title {
+    width: 70%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    padding-top: 3rem;
+  }
+  .scr-only {
+    position : absolute;
+    left: -9999999px;
+  width: 1px;
+    height: 1px;
+      top: auto;
+        overflow: hidden;
+  }
+    label {
+  font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+   .form-control {
+    margin: 0px 0px 1.5em 0.3em;
+    width: 60%;
+    max-width: 55vw; 
+    height: 15%;
+    display: block;
+    padding: 0.375rem 0.75rem; 
+}
+  #name-label {
+    margin: 1.2em 0em -0.3em 0.3em;
+    
+  }
+ #name,#email,#number,#dropdown {
+   background-color: white;
+   border: none;
+ }
+#name {
+     margin: 0px 0px 1.5em 0.3em;
+   }
+  #email-label {
+    margin: 1.2em 0em 0.5em 0.3em;
+  }
+  #email {
+    margin: 0em 0em 0em 0.3em;
+  }
+  #number-label {
+    margin: 1.2em 0em 0.5em 0.3em;
+  }
+  #number {
+    margin: 0em 0em 0em 0.3em;
+  }
+  #dropdown {
+    width: calc(70% + 1.7rem);
+    height: 15%;
+    font-family: inherit;
+    font-weight: bold;
+  }
+  #dropdown option {
+   font-weight: bold;
+}
+  
+  .fld-group3, .fld-group4 {
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .fld-group4 {
+    margin-top: 8rem;
+  } 
+  .fld-group4 .field-title {
+    width: 80%;
+  }
+  .option-label {
+   display: flex; 
+   flex-direction: row-reverse; 
+   gap: 1.7rem;
+   margin-left: 9rem;
+}
+  #comment-label {
+    margin: 3rem 0 0.7rem 0;
+    align-self: center;
+    font-size: 0.9rem;
+  }
+  #comment-box {
+    width: 50%;
+    align-self: center;
+    font-family: inherit;
+    border-radius: 3pt;
+  }
+  #submit {
+    border-style: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+   width: 20%;
+   height: 1.5rem;
+   align-self: center;
+   background-color: rgba(252, 207, 58, 0.89);
+   font-family: inherit;
+   margin-top: 1rem;
+  }
+  footer {
+    width: 100%;
+    margin: 7rem 0.8rem 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: rgba(167, 168, 173, 0.856);
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin: 0 0 1rem 0;
+    font-size: 0.7rem;
+  }
+  .copyrights {
+    line-height: 1.5;
+    word-spacing: 2px;
+    font-size: 0.7rem;
+  }
+  /*****media queries**/
+
+/*extra-small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+body {
+    font-size: 40%;
+    padding-top: 10%;
+   }
+   #title {
+    font-size: 1.2rem;
+   }
+   #description {
+    font-size: 0.9rem;
+   }
+   #survey-form {  
+  max-width: 75vw;
+   }
+  label {
+    font-size: 0.9rem;
+    }
+    .form-control {
+        width: 70% !important;
+    }
+    .fld-group3, .fld-group4 {
+        font-size: 0.9rem;
+      }
+  .fld-group4 {
+    margin-top: 4rem;
+  }
+    .field-group .field-title {
+       margin-left: 1rem !important;
+      }
+       .option-label {
+         margin-left: 1rem;
+        margin-right: 2rem;
+       }
+  #comment-label {
+     margin-top: 5rem;
+  }
+  #comment-box {
+    width: 60%;
+  }
+  footer {
+    margin-top: 5rem;
+  }
+  footer ul {
+    
+    font-size: 0.6rem;
+    gap: 1.5rem;
+  }
+  .copyrights {
+    font-size: 0.6rem;
+  }
+}
+
+/*small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+     body {
+        font-size: 50%;
+        padding-top: 12%;
+     }
+    #title {
+        font-size: 1.3rem;
+    }
+    #description {
+        font-size: 0.92rem;
+    }
+    #survey-form {  
+        max-width: 70vw;
+         }
+        
+     .field-group {
+            font-size: 0.9rem;
+          }
+    .fld-group3, .fld-group4 {
+            margin-left: 0.8rem;
+          }
+    label {
+            font-size: 0.9rem;
+            }
+          #dropdown {
+                width: calc(60% + 1.7rem);
+                max-width: 42vw;
+            }
+            .fld-group3, .fld-group4 {
+                font-size: 0.9rem;
+              }
+            #comment-box {
+                width: 55%;
+          }
+          footer {
+    margin-top: 5rem;
+  }
+  footer ul {
+    font-size: 0.6rem;
+    gap: 1.5rem;
+  }
+  .copyrights {
+    font-size: 0.6rem;
+  }
+}
+
+/* medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+   body {
+    font-size: 50%;
+    padding-top: 14%;
+ }
+#title {
+    font-size: 1.3rem;
+}
+#description {
+    font-size: 0.92rem;
+}
+#survey-form { 
+    max-width: 70vw;
+     }/*same with extra*/
+    
+ .field-group {
+        font-size: 0.9rem;
+      }
+      label {
+        font-size: 0.9rem;
+        }
+        .form-control {
+            max-width: 55vw;/*diffrent*/
+        }
+        #dropdown {
+            width: calc(60% + 1.7rem);
+            max-width: 41vw;
+        }
+        .fld-group3, .fld-group4 {
+            margin-left: 3rem;
+          }
+        #submit {
+            width: 18%;
+        }
+  }
+/*large devices (laptops/desktops, 992px and up)*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    #title {
+        font-size: 1.4rem;
+    }
+    #description {
+        font-size: 0.95rem;
+      } 
+      #survey-form { 
+        width: 80%;
+        max-width: 60vw;
+         }
+         .field-group {
+            font-size: 0.93rem;
+          }
+          label {
+            font-size: 0.93rem;
+            }
+            .form-control {
+                max-width: 55vw;
+            }
+            #dropdown {
+                width: calc(60% + 1.7rem);
+                max-width: 33vw ;
+            }
+            .fld-group3, .fld-group4 {
+                font-size: 0.92rem;
+                margin-left: 3.5rem;
+              }
+            #comment-box {
+                width: 47%;
+            }
+            #submit {
+                width: 15%;
+            }
+      }    
+
+/*extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 992px) and (max-width: 30000px) {
+    #title {
+        font-size: 1.5rem;
+    }
+    #description {
+        font-size: 0.97rem;
+      } 
+      #survey-form { 
+        width: 80%;
+        max-width: 55vw;
+         }
+         .field-group {
+            font-size: 0.93rem;
+          }
+          label {
+            font-size: 0.98rem;
+            }
+            .form-control {
+                max-width: 55vw;
+            }
+            #dropdown {
+                width: calc(60% + 1.7rem);
+                max-width: 32vw; 
+            }
+            .fld-group3, .fld-group4 {
+                font-size: 0.92rem;
+                margin-left: 3.5rem;
+              }
+            #submit {
+                width: 15%;
+            }
+}

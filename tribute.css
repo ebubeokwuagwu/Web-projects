@@ -1,0 +1,193 @@
+html {
+    box-sizing: border-box;
+}
+body {
+   margin: 0;
+   padding: 0;
+   background-color: rgb(236,236,236);
+   width: 100%;
+ }
+#main  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    max-width: 98vw;
+    font-family: 'Nunito', sans-serif;
+    font-size: 70.5%;
+    margin: 0;
+    padding: 2rem 0 0 0;
+    height: auto;
+    overflow: hidden;
+    border: 0.8rem solid white;
+      border-top-left-radius: 3pt;
+      border-top-right-radius: 3pt;
+    }
+    #title {
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: 'Roboto+Slab', sans-serif;
+    }
+    .icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: -2em 0 0 0;
+      width: 50%;
+      gap: 7rem;
+    }
+    .fa-thin,.fa-chevrons-left, .fa-thin,.fa-chevrons-right  {
+      font-size: 0.5rem;
+    }
+    #subtitle {
+      text-align: center;
+      font-size: 0.95rem;
+    margin-top: 1rem;
+    display: block;
+    width: 95%;
+    }
+    #img-div {
+        max-width: 50vw;
+       height : auto;
+       margin-top: 2.5rem;
+       padding-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+    flex-direction: column;
+       background-color: white;
+    }
+    #image {
+      width: 84%;
+      max-width: 200px;
+      max-height: auto;
+      height: auto;
+    align-self: center;
+    margin-top: 1.8rem;
+    }
+    #img-caption {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    }
+    #tribute-info {
+    font-size: 0.95rem;
+    margin: 40px 0px 0px 6px;
+    padding: 0 1.3rem 0 1.3rem;
+    text-align: justify;
+    line-height: 1.7;
+    }
+    #tribute-info::first-letter {
+        font-size: 2rem;
+        font-weight: bold;
+        float: left;
+        margin-right: 0.7rem;
+    }
+    .bold {
+      margin-right: 6px;
+    }
+    h2 {
+    font-size: 4.5vmin;
+    margin: 50px 0px 15px 5px;
+    padding: 0px 10px 0px 6px;
+    }
+    #timeline h2 {
+        font-size: 0.95rem;
+        padding-right: 3rem;
+    }
+    #timeline .list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      line-height: 2.3;
+      padding: 0 2rem 0 3rem;
+    }
+    #timeline .list strong {
+        margin-right: 0.6rem;
+    }
+    #footer {
+        align-self: flex-end;
+    margin-top: 4rem;
+    padding-right: 0.7rem;
+    font-size: 0.8rem;
+    }  
+    #tribute-link {
+      color:rgb(0,128,157);
+      margin-left: 8px;
+      text-decoration: none;
+    }
+    /*****media queries**/
+
+/*extra-small devices, portrait tablets and large phones(768px and down) */
+
+@media only screen and (max-width: 768px) {
+   #main {
+    font-size: 50%;
+   }
+   #subtitle {
+    font-size: 0.9rem;
+  }
+  #img-div {
+    width: 70%;
+ }
+ #image {
+   width: 86%;
+ }
+    #timeline h2 {
+        font-size: 0.9rem;
+        margin-left: 1.3rem;
+    }
+    #timeline .list {
+      font-size: 0.85rem;
+      padding: 0 4rem 0 4rem;
+    }
+}
+/* medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+   #main {
+    font-size: 50%;
+    padding-top: 3rem;
+   }
+  #img-div {
+    width: 43%;
+ }
+    #tribute-info { 
+    max-width: 93%;
+    }
+    #timeline h2 {
+        margin-left: 2rem;
+    }
+    #timeline .list {
+      font-size: 0.89rem;
+      padding: 0 7rem 0 7rem;
+    }
+    #footer {
+        margin-top: 7rem;
+    }  
+}
+/*large devices, extra-large devices (laptops/desktops,large laptops and desktops*/
+@media only screen and (min-width: 992px) and (max-width: 30000px)
+{
+     #main {
+        padding-top: 3rem;
+       }
+      #img-div {
+        width: 33%;
+     }
+        #tribute-info {
+        font-size: 0.98rem;
+        max-width: 93%;
+        }
+        #tribute-info::first-letter {
+            font-size: 2.5rem;
+        }
+        #timeline h2 {
+            margin-left: 4rem;
+        }
+        #timeline .list {
+          font-size: 0.95rem;
+          padding: 0 12rem 0 12rem;
+        }
+        #footer {
+            margin-top: 6rem;
+        }  
+}
